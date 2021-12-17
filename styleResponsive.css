@@ -1,0 +1,89 @@
+
+/* NEST HUB MAX */
+@media (max-width: 1280px) and (max-height: 800px){
+    header img{
+        margin-top: 250px;
+    }
+}
+
+/* IPAD PRO */
+@media (max-width: 1024px){
+    header img{
+        margin-top: 500px;
+    }
+}
+/* NEST HUB */
+@media (max-width: 1024px) and (max-height: 600px){
+    header img{
+        margin-top: 150px;
+    }
+}
+
+/* ALL */
+@media (max-width: 900px) {
+    section .sec-about-txt{
+        margin-top: 50px;    
+    }
+}
+
+/* IPAD  */
+@media (max-width: 780px){
+    header img{
+        margin-top: 350px;
+    }
+}
+
+/* SURFACE DUO */
+@media (max-width: 540px){
+    header img{
+        margin-top: 200px;
+    }
+    section .sec-about-txt{
+        max-width: 450px;
+    }
+}
+
+/* PIXEL 2, PIXEL 2 XL, IOS 6/7/8, IOS 6/7/8 PLUS, IOS X */
+@media (max-width: 450px){
+    section .sec-about-txt{
+        max-width: 350px;
+        max-height: 415px;
+    }
+    section .sec-exp-container{
+        max-width: 350px;
+    }
+}
+
+/* MOTO G4, GALAXY S5, IPHONE 5/SE */
+@media (max-width: 360px){
+    section .sec-about-txt{
+        max-width: 280px;
+        max-height: 415px;
+    }
+    section .sec-exp-container{
+        max-width: 300px;
+    }
+}
+
+/* GALAXY FOLD */
+@media (max-width: 280px){
+    section .sec-about-images{
+        border: none;
+        padding: 15px 13px 5px 13px;
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    section .sec-about-txt{
+        border-radius: 0px;
+    }
+    section .sec-about-txt{
+        border: 1px solid var(--bg-gray);
+    }
+    section .sec-project-list{
+        padding: 10px;
+        background-color: var(--bg-paleLight);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    }
+    section .sec-exp-container{
+        max-width: 250px;
+    }
+}

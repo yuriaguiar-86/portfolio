@@ -84,8 +84,7 @@ section .sec-about-images img{
     max-width: 220px;
 }
 section .sec-about-images figcaption{
-    display: flex;
-    
+    display: flex;  
 }
 section .sec-about-images figcaption div{
     display: flex;
@@ -143,7 +142,7 @@ section .sec-project-list{
     transition: all 0.5s ease;
 }
 section .sec-project-list img{
-    max-width: 350px;
+    max-width: 250px;
 }
 section .projects{
     display: flex;
@@ -297,31 +296,6 @@ footer .footer-social{
     display: flex;
     justify-content: center;
     padding-top: 30px;
-}
-
-/* RESPONSIVE */
-@media (max-width: 950px) {
-    section .sec-about-txt{
-        margin-top: 50px;    
-    }
-}
-@media (max-width: 650px) {
-    section .sec-about-txt{
-        max-width: 500px;
-        max-height: 350px;
-    }
-}
-@media (max-width: 550px) {
-    section .sec-about-txt{
-        max-width: 400px;
-        max-height: 350px;
-    }
-    section .sec-exp-container{
-    max-width: 350px;
-    padding: 10px;
-    background-color: var(--bg-white);
-    border-radius: 5px;
-}
 }
 
 /* BOX MESSAGEM ABOUT */

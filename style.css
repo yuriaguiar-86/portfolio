@@ -157,10 +157,18 @@ section .projects h3{
     letter-spacing: 5px;
     font-weight: 300;
 }
+section .projects a{
+    text-decoration: none;
+    color: var(--bg-black);
+}
 section .sec-project-list:hover{
-    cursor: pointer;
     transition: all 0.5s ease;
     box-shadow: 0 4px 6px 2px rgba(0, 0, 0, 0.5);
+}
+section .projects a:hover{
+    color: var(--bg-container);
+    font-weight: bold;
+    cursor: pointer;
 }
 
 /* SKILLS */

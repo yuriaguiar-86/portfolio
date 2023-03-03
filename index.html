@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="./images/icon.png" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/hamburguer.css" />
+    <link rel="stylesheet" href="./styles/home.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/skills.css" />
+    <link rel="stylesheet" href="./styles/projects.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <title>Yuri Aguiar</title>
+</head>
+<body>
+    <header>
+        <nav class="hamburger_menu">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" for="menu_toggle">
+                <span></span>
+            </label>
+
+            <ul class="menu_box">
+                <li><a class="menu_item" href="#home">Home</a></li>
+                <li><a class="menu_item" href="#about">Sobre mim</a></li>
+                <li><a class="menu_item" href="#skills">Habilidades</a></li>
+                <li><a class="menu_item" href="#projects">Projetos</a></li>
+                <li><a class="menu_item" href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+
+        <h3 class="title_portfolio">Port<span>fólio</span></h3>
+    </header>
+
+    <main>
+        <!-- Home -->
+        <section class="container_home" id="home">
+            <div class="home_data">
+                <p>Olá mundo, me chamo</p>
+                <h1>Yuri Aguiar</h1>
+                <p>Sou desenvolvedor Full Stack</p>
+    
+                <ul class="list_contact">
+                    <li><a href="https://github.com/yuriaguiar-86" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/yuri-aguiar-14a1331a5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>                
+                </ul>
+            </div>
+
+            <img src="./images/avatar.png" alt="My avatar" />
+        </section>
+
+        <!-- About me -->
+        <section class="container_about" data-aos="fade-right" id="about">
+            <figure>
+                <img src="./images/avatar_about.png" alt="Avatar" />
+                <figcaption>Sobre mim</figcaption>
+            </figure>
+
+            <div class="about_txt">
+                <p>Meu nome é Yuri Aguiar, tenho <span id="age"></span> anos e sou um desenvolvedor full stack em PHP. Tenho curso superior em Análise e Desenvolvimento de Sistemas e estou sempre buscando me aprimorar. Minhas habilidades fortes incluem HTML, CSS, JavaScript, PHP, CakePHP e SQL, sem mencionar que estou sempre atualizando e aprimorando meu conhecimento em relação a essas tecnologias.</p>
+                <p>Além disso, estou em processo de desenvolvimento de minhas habilidades com Laravel, Bootstrap, jQuery, React e Docker. Adoro aprender novas tecnologias e me atualizar constantemente sobre as tendências do mercado para garantir que minhas habilidades estejam sempre atualizadas e relevantes para o mundo do desenvolvimento de software.</p>
+                <p>Sou uma pessoa dedicada, que gosta de trabalhar em equipe e sempre aberto a compartilhar meu conhecimento com meus colegas. Minha abordagem para o desenvolvimento é centrada no usuário e na qualidade do código. Acredito que um bom software deve ser intuitivo, fácil de usar e robusto, e faço o possível para criar soluções que atendam a esses critérios.</p>
+                <p>Se você precisa de um desenvolvedor full stack em PHP altamente qualificado, não hesite em entrar em contato comigo. Estou sempre pronto para novos desafios e oportunidades emocionantes na área de desenvolvimento web.</p>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="container_skills" data-aos="fade-left" id="skills">
+            <h2>Habilidades</h2>
+            
+            <h3>Fortes</h3>
+            <div class="skills">
+                <p title="HTML5"><i class="devicon-html5-plain colored"></i></p>
+                <p title="CSS3"><i class="devicon-css3-plain colored"></i></p>
+                <p title="JavaScript"><i class="devicon-javascript-plain colored"></i></p>
+                <p title="PHP"><i class="devicon-php-plain colored"></i></p>
+                <p title="CakePHP"><i class="devicon-cakephp-plain colored"></i></p>
+                <p title="MySQL"><i class="devicon-mysql-plain colored"></i></p>
+                <p title="PostgreSQL"><i class="devicon-postgresql-plain colored"></i></p>
+            </div>
+
+            <h3>Em desenvolvimento</h3>
+            <div class="skills">
+                <p title="Laravel"><i class="devicon-laravel-plain colored"></i></p>
+                <p title="ReactJs"><i class="devicon-react-original colored"></i></p>
+                <p title="JQuery"><i class="devicon-jquery-plain colored"></i></p>
+                <p title="Bootstrap"><i class="devicon-bootstrap-plain colored"></i></p>
+                <p title="Docker"><i class="devicon-docker-plain colored"></i></p>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="container_projects" id="projects">
+            <h2>Projetos Git&GitHub</h2>
+            <div id="list_projects"></div>
+        </section>
+
+        <!-- Contact -->
+        <section class="container_contact" data-aos="fade-right" id="contact">
+            <h2>Contate-me</h2>
+             
+            <form>
+                <div class="container_inputs">
+                    <input type="text" name="name" placeholder="Seu nome" />
+                    <input type="email" name="email" placeholder="exemplo@email.com" />
+                </div>
+
+                <input type="text" name="title" placeholder="Título breve" />
+                <textarea name="message" cols="30" rows="10" placeholder="Mensagem..."></textarea>
+                <input type="submit" value="Enviar mensagem" />
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> - Yuri Aguiar. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>AOS.init();</script>
+    <script src="./scripts/years.js"></script>
+    <script src="./scripts/projects.js"></script>
+</body>
+</html>
+
+

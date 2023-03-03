@@ -1,0 +1,42 @@
+.container_home {
+    min-height: 70vh;
+    border-bottom: 1px solid var(--grey);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.home_data {
+    font-size: 1.5em;
+}
+
+.home_data h1 {
+    font-size: 2em;
+    color: var(--green);
+}
+
+.list_contact {
+    gap: .8em;
+    font-size: 1.2em !important;
+    margin-top: .5em;
+
+    display: flex;
+    list-style-type: none;
+}
+
+.list_contact a {
+    color: var(--black);
+}
+
+.list_contact a:hover {
+    transition: .3s;
+    cursor: pointer;
+    color: var(--green);
+}
+
+@media screen and (max-width: 950px) {
+    .container_home img {
+        display: none;
+    }
+}

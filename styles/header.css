@@ -1,0 +1,19 @@
+header {
+    z-index: 99;
+    width: 100%;
+    padding: 1em 2em;
+
+    display: flex;
+    position: fixed;
+    background: var(--black);
+    justify-content: space-between;
+}
+
+.title_portfolio {
+    letter-spacing: 2px;
+    color: var(--grey);
+}
+
+.title_portfolio span {
+    color: var(--green);
+}

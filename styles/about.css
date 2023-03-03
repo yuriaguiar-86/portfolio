@@ -1,0 +1,46 @@
+.container_about {
+    display: flex;
+    padding: 5em 0;
+    align-items: center;
+    border-bottom: 1px solid var(--grey);
+}
+
+.container_about figure {
+    display: flex;
+    margin-right: 5em;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container_about figcaption {
+    font-size: 1.5em;
+    font-weight: 200;
+    margin-top: 10px;
+}
+
+.container_about img {
+    max-width: 200px;
+}
+
+.about_txt p {
+    margin-bottom: 8px;
+    text-align: justify;
+}
+
+@media screen and (max-width: 1400px) {
+    .container_about {
+        align-items: flex-start;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .container_about {
+        gap: 1em;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .container_about img {
+        display: none;
+    }
+}

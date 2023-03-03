@@ -1,0 +1,26 @@
+.container_skills {
+    padding: 5em 0;
+    border-bottom: 1px solid var(--grey);
+}
+
+.container_skills h2,
+.container_skills h3 {
+    text-align: center;
+}
+
+.container_skills h3 {
+    margin-top: 1em;
+}
+
+.skills {
+    gap: .5em;
+    display: flex;
+    font-size: 3em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills i {
+    cursor: pointer;
+}

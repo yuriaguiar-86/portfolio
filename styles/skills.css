@@ -13,14 +13,25 @@
 }
 
 .skills {
-    gap: .5em;
+    gap: 1em;
     display: flex;
-    font-size: 3em;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
 .skills i {
+    font-size: 3em;
     cursor: pointer;
+}
+
+.skills p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills small {
+    color: var(--grey);
+    font-size: .8em;
 }

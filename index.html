@@ -37,7 +37,6 @@
                 <li><a class="menu_item" href="#about">Sobre mim</a></li>
                 <li><a class="menu_item" href="#skills">Habilidades</a></li>
                 <li><a class="menu_item" href="#projects">Projetos</a></li>
-                <li><a class="menu_item" href="#contact">Contato</a></li>
             </ul>
         </nav>
 
@@ -57,16 +56,11 @@
                     <li><a href="https://www.linkedin.com/in/yuri-aguiar-14a1331a5/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>                
                 </ul>
             </div>
-
-            <img src="./images/avatar.png" alt="My avatar" />
         </section>
 
         <!-- About me -->
         <section class="container_about" data-aos="fade-right" id="about">
-            <figure>
-                <img src="./images/avatar_about.png" alt="Avatar" />
-                <figcaption>Sobre mim</figcaption>
-            </figure>
+            <h2>Sobre mim</h2>
 
             <div class="about_txt">
                 <p>Meu nome é Yuri Aguiar, tenho <span id="age"></span> anos e sou um desenvolvedor full stack em PHP. Tenho curso superior em Análise e Desenvolvimento de Sistemas e estou sempre buscando me aprimorar. Minhas habilidades fortes incluem HTML, CSS, JavaScript, PHP, CakePHP e SQL, sem mencionar que estou sempre atualizando e aprimorando meu conhecimento em relação a essas tecnologias.</p>
@@ -82,45 +76,67 @@
             
             <h3>Fortes</h3>
             <div class="skills">
-                <p title="HTML5"><i class="devicon-html5-plain colored"></i></p>
-                <p title="CSS3"><i class="devicon-css3-plain colored"></i></p>
-                <p title="JavaScript"><i class="devicon-javascript-plain colored"></i></p>
-                <p title="PHP"><i class="devicon-php-plain colored"></i></p>
-                <p title="CakePHP"><i class="devicon-cakephp-plain colored"></i></p>
-                <p title="MySQL"><i class="devicon-mysql-plain colored"></i></p>
-                <p title="PostgreSQL"><i class="devicon-postgresql-plain colored"></i></p>
+                <p title="HTML5">
+                    <i class="devicon-html5-plain colored"></i>
+                    <small>HTML5</small>
+                </p>
+                <p title="CSS3">
+                    <i class="devicon-css3-plain colored"></i>
+                    <small>CSS3</small>
+                </p>
+                <p title="JavaScript">
+                    <i class="devicon-javascript-plain colored"></i>
+                    <small>JavaScript</small>
+                </p>
+                <p title="PHP">
+                    <i class="devicon-php-plain colored"></i>
+                    <small>PHP</small>
+                </p>
+                <p title="CakePHP">
+                    <i class="devicon-cakephp-plain colored"></i>
+                    <small>CakePHP</small>
+                </p>
+                <p title="MySQL">
+                    <i class="devicon-mysql-plain colored"></i>
+                    <small>MySQL</small>
+                </p>
+                <p title="PostgreSQL">
+                    <i class="devicon-postgresql-plain colored"></i>
+                    <small>PostgreSQL</small>
+                </p>
             </div>
 
             <h3>Em desenvolvimento</h3>
             <div class="skills">
-                <p title="Laravel"><i class="devicon-laravel-plain colored"></i></p>
-                <p title="Angular"><i class="devicon-angularjs-plain colored"></i></p>
-                <p title="JQuery"><i class="devicon-jquery-plain colored"></i></p>
-                <p title="Bootstrap"><i class="devicon-bootstrap-plain colored"></i></p>
-                <p title="Docker"><i class="devicon-docker-plain colored"></i></p>
+                <p title="Laravel">
+                    <i class="devicon-laravel-plain colored"></i>
+                    <small>Laravel</small>
+                </p>
+                <p title="Angular">
+                    <i class="devicon-angularjs-plain colored"></i>
+                    <small>Angular</small>
+                </p>
+                <p title="JQuery">
+                    <i class="devicon-jquery-plain colored"></i>
+                    <small>JQuery</small>
+                </p>
+                <p title="Bootstrap">
+                    <i class="devicon-bootstrap-plain colored"></i>
+                    <small>Bootstrap</small>
+                </p>
+                <p title="Docker">
+                    <i class="devicon-docker-plain colored"></i>
+                    <small>Docker</small>
+                </p>
             </div>
         </section>
 
         <!-- Projects -->
         <section class="container_projects" id="projects">
             <h2>Projetos Git&GitHub</h2>
+
+            <!-- Listagems dos projetos pegos no repositório via API -->
             <div id="list_projects"></div>
-        </section>
-
-        <!-- Contact -->
-        <section class="container_contact" data-aos="fade-right" id="contact">
-            <h2>Contate-me</h2>
-             
-            <form action="mailto:yuriaguiar.nascimentof@gmail.com" method="post" enctype="text/plain">
-                <div class="container_inputs">
-                    <input type="text" name="name" placeholder="Seu nome" />
-                    <input type="email" name="email" placeholder="exemplo@email.com" />
-                </div>
-
-                <input type="text" name="title" placeholder="Título breve" />
-                <textarea name="message" cols="30" rows="10" placeholder="Mensagem..."></textarea>
-                <input type="submit" value="Enviar mensagem" />
-            </form>
         </section>
     </main>
 

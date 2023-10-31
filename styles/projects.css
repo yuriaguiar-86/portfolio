@@ -1,7 +1,6 @@
 .container_projects {
     padding: 5em 0;
     text-align: center;
-    border-bottom: 1px solid var(--grey);
 }
 
 .container_projects h2 {
@@ -16,6 +15,10 @@
 }
 
 .project {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     padding: 1em;
     max-width: 300px;
     min-width: 250px;
@@ -27,34 +30,25 @@
     width: 190px;
 }
 
-.project p:not(#btn_view_project) {
+.project p {
     width: 100%;
     max-width: 20ch;
-
     overflow: hidden;
     text-align: center;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+    white-space: normal;
 }
 
 #btn_view_project {
-    width: 100%;
+    display: block;
     padding: .8em;
     margin-top: 1em;
     border-radius: 5px;
     background: var(--grey);
+    color: var(--white);
+    text-decoration: none;
 }
 
 #btn_view_project:hover {
     transition: .3s;
     background: var(--green);
-}
-
-.project a {
-    color: var(--white);
-    text-decoration: none;
-}
-
-.project a:hover {
-    transition: .3s;
 }

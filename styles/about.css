@@ -1,29 +1,16 @@
 .container_about {
     display: flex;
     padding: 5em 0;
-    align-items: center;
+    flex-direction: column;
     border-bottom: 1px solid var(--grey);
 }
 
-.container_about figure {
-    display: flex;
-    margin-right: 5em;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container_about figcaption {
-    font-size: 1.5em;
-    font-weight: 200;
-    margin-top: 10px;
-}
-
-.container_about img {
-    max-width: 200px;
+.container_about h2 {
+    text-align: center;
 }
 
 .about_txt p {
-    margin-bottom: 8px;
+    margin: 8px;
     text-align: justify;
 }
 

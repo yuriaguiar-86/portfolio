@@ -11,14 +11,13 @@ const loadingProjects = () => {
 let html = '';
 let projects = JSON.parse(loadingProjects());
 
-for(let project of projects) {
+for (let project of projects) {
     html += '<div class="project" data-aos="fade-up">';
         html += '<img src="./images/project.jpg" alt="Projeto" />';
         html += `<h3>${ project.name }</h3>`;
         html += `<p><small>${ project.description ? project.description : '-' }</small></p>`;
-        html += `<p id="btn_view_project"><a href="${ project.html_url }" target="__blank">Ver projeto</a></p>`;
+        html += `<a id="btn_view_project" href="${ project.html_url }" target="__blank">Ver projeto</a>`;
     html += '</div>';
-
 }
 
 document.getElementById("list_projects").innerHTML = html;

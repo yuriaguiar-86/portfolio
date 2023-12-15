@@ -3,6 +3,11 @@
     text-align: center;
 }
 
+.container_projects p {
+    text-align: right;
+    color: var(--grey);
+}
+
 .container_projects h2 {
     margin-bottom: 1em;
 }

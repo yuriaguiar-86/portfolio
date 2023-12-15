@@ -11,6 +11,8 @@ const loadingProjects = () => {
 let html = '';
 let projects = JSON.parse(loadingProjects());
 
+console.log(projects);
+
 for (let project of projects) {
     html += '<div class="project" data-aos="fade-up">';
         html += '<img src="./images/project.jpg" alt="Projeto" />';
